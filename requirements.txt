@@ -1,0 +1,8 @@
+# A-level RAG MVP — 本地 embedding + 可选 OpenAI 兼容 LLM
+# Python 3.13 下选 LanceDB（Chroma 的 hnswlib 需源码编译且易失败）
+lancedb>=0.17,<0.41
+sentence-transformers>=3.0.0,<4.0
+pyarrow>=15
+# sentence-transformers 会拉取 torch；首次安装与首次下载 bge-small-zh 较慢属正常
+openai>=1.40,<2
+python-dotenv>=1.0,<2
